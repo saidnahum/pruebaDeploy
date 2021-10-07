@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categirias",
+  "info": {
+    "name": "categiria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "posts": {
+      "via": "categirias",
+      "collection": "post"
+    }
+  }
+}
